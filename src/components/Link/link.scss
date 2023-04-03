@@ -1,0 +1,9 @@
+.link {
+    font-family: var(--font-family-mono); 
+
+    @media (hover: hover) {
+        &:hover {
+          text-decoration: underline;  
+        }        
+    }
+}    

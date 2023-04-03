@@ -1,0 +1,13 @@
+:root {
+    --wrapper-width: 104rem;
+    --wrapper-padding: 3rem;
+}
+
+.wrapper {
+    width: calc(var(--wrapper-width) + 2 * var(--wrapper-padding));
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}

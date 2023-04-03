@@ -1,0 +1,10 @@
+.heading {
+  font-family: var(--font-family-mono);
+
+  @for $level from 1 through 3 {
+    &--h#{$level} {
+      font-size: var(--font-size-h#{$level});
+      line-height: var(--line-height-h#{$level});
+    }
+  }
+}
