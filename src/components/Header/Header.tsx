@@ -3,7 +3,7 @@ import Link from '../Link/Link';
 import './header.scss';
 
 export default function Header() {
-  const links = [
+  const links:String[] = [
     '#experience',
     '#projects',
     '#tech-stack',
@@ -17,7 +17,7 @@ export default function Header() {
 					<h1 className='header__logo'>PawelMatusz.pl</h1>
 
           <nav className='header__nav'>
-            {links.map(link => <Link key={link} href={link}>{link}</Link>) }
+            {links.map((link,index) => <Link key={index} href={link}>{link}</Link>) }
           </nav>
 			</Wrapper>
     </header>
